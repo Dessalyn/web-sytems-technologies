@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        /* Add your custom CSS styles here */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <th>Zipcode</th>
+                <td><input type="text" name="zipcode"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
