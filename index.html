@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 flex items-center justify-items-start min-h-screen">
+    <div class="w-full max-w-md p-4 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Create an Account</h1>
+        <form id="createAccountForm" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="name" class="text-sm font-medium">Name:</label>
+                <input type="text" id="name" name="name" required class="border p-2 rounded w-full">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="email" class="text-sm font-medium">Email:</label>
+                <input type="email" id="email" name="email" required class="border p-2 rounded w-full">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="role" class="text-sm font-medium">Role:</label>
+                <select id="role" name="role" class="border p-2 rounded w-full">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 transition duration-300">
+                Create Account
+            </button>
+        </form>
+    </div>
+</body>
+
+<body class="bg-gray-100 flex items-start justify-items-center min-h-screen">
+    <div class="w-full max-w-96 p-10 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold mt-8 text-left">User List</h1>
+        <table class="w-full mt-4">
+            <thead>
+                <tr>
+                    <th class="border p-2">ID</th>
+                    <th class="border p-2">Name</th>
+                    <th class="border p-2">Email</th>
+                    <th class="border p-2">Role</th>
+                    <th class="border p-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-2">1</td>
+                    <td class="border p-2">Dessalyn Cabiladas</td>
+                    <td class="border p-2">dessalyncabiladas@gmail.com</td>
+                    <td class="border p-2">Admin</td>
+                    <td class="border p-2">
+                        <button class="text-blue-500 hover:underline mr-2">
+                            <i class="fas fa-edit"></i> 
+                        </button>
+                        <button class="text-red-500 hover:underline">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td class="border p-2">2</td>
+                        <td class="border p-2">Johny Bravo</td>
+                        <td class="border p-2">johny bravo@gmail.com</td>
+                        <td class="border p-2">User</td>
+                        <td class="border p-2">
+                            <button class="text-blue-500 hover:underline mr-2">
+                                <i class="fas fa-edit"></i> 
+                            </button>
+                            <button class="text-red-500 hover:underline">
+                                <i class="fas fa-trash-alt"></i> 
+                            </button>
+                        </td>
+                    </tr>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
